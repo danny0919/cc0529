@@ -16,7 +16,7 @@ export async function getServerSideProps(){
 export default function Home({shop}) {
   return (
     <Layout>        
-        <ShopContainer shop={shop} />
+        <ShopContainer key={shop[0].cid} shop={shop} />
     </Layout>
   )
 }

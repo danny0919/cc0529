@@ -16,7 +16,7 @@ export async function getServerSideProps(){
 export default function Home({women}) {
   return (
     <Layout>      
-        <WomenContainer  women={women} />      
+        <WomenContainer  key={women[0].cid} women={women} />      
     </Layout>
   )
 }

@@ -16,7 +16,7 @@ export async function getServerSideProps(){
 export default function Home({jacket}) {
   return (
     <Layout>      
-        <JacketContainer  jacket={jacket} />      
+        <JacketContainer key={jacket[0].cid} jacket={jacket} />      
     </Layout>
   )
 }

@@ -16,7 +16,7 @@ export async function getServerSideProps(){
 export default function Home({hat}) {
   return (
     <Layout>      
-        <HatContainer  hat={hat} />      
+        <HatContainer key={hat[0].cid} hat={hat} />      
     </Layout>
   )
 }
